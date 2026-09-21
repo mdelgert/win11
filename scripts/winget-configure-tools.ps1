@@ -16,6 +16,6 @@ Write-Host ""
 
 # winget configure -f C:\Source\win11\.config\vs2022.dsc.winget --accept-configuration-agreements
 winget configure -f C:\Source\win11\.config\vs2026.dsc.winget --accept-configuration-agreements
-winget configure -f C:\source\win11\.config\sms22.dsc.winget --accept-configuration-agreements
+# winget configure -f C:\source\win11\.config\sms22.dsc.winget --accept-configuration-agreements
 
 Start-Sleep -Seconds 1

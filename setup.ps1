@@ -37,7 +37,7 @@ $ScriptSets = @{
         @{ File = "winget-update.ps1"}
         @{ File = "winget-configure-enable.ps1"}
         @{ File = "winget-configure-baseline.ps1"}
-        @{ File = "winget-configure-tools.ps1"}
+        # @{ File = "winget-configure-tools.ps1"}
         @{ File = "vscodemenu.ps1"}
         @{ File = "runonce.ps1"; Params = @{ NextScriptSet = "thirdReboot"; SetupScript = "C:\Setup\win11\setup.ps1" } }
     )
