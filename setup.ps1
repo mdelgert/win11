@@ -43,11 +43,11 @@ $ScriptSets = @{
 
     thirdReboot = @(
         @{ File = "template.ps1"; Params = @{ ScriptSet = "thirdReboot"} }
+        @{ File = "winget-configure-tools.ps1"}
         #@{ File = "runonce.ps1"; Params = @{ NextScriptSet = "fourthReboot"; SetupScript = "C:\Setup\win11\setup.ps1" } }
     )
 
     fourthReboot = @(
-        @{ File = "winget-configure-tools.ps1"}
         @{ File = "template.ps1"; Params = @{ ScriptSet = "fourthReboot"} }
     )
 }
