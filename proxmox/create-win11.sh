@@ -117,15 +117,14 @@ qm set "$VMID" \
 # ============================================================
 
 qm set "$VMID" \
-    --ide1 "${ISO_STORAGE}:iso/${UNATTEND_ISO},media=cdrom"
-
+    --ide1 "${ISO_STORAGE}:iso/${WINDOWS_ISO},media=cdrom"
 
 # ============================================================
 # Windows installation ISO
 # ============================================================
 
 qm set "$VMID" \
-    --ide2 "${ISO_STORAGE}:iso/${WINDOWS_ISO},media=cdrom"
+    --ide2 "${ISO_STORAGE}:iso/${UNATTEND_ISO},media=cdrom"
 
 
 # ============================================================
@@ -144,8 +143,7 @@ qm set "$VMID" \
 # ============================================================
 
 qm set "$VMID" \
-    --boot "order=ide0;ide2;net0;ide1"
-
+    --boot "order=ide0;ide1;ide2;net0"
 
 # ============================================================
 # Finished
