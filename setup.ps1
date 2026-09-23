@@ -35,15 +35,15 @@ $ScriptSets = @{
         @{ File = "git-config.ps1"}
         @{ File = "ssh-server.ps1"; Params = @{ GitHubUsername = "mdelgert"; TargetUsername = "mdelgert"}}
         @{ File = "winget-update.ps1"}
-        @{ File = "winget-configure-enable.ps1"}
-        @{ File = "winget-configure-baseline.ps1"}
-        @{ File = "winget-configure-tools.ps1"}
-        @{ File = "vscodemenu.ps1"}
         @{ File = "runonce.ps1"; Params = @{ NextScriptSet = "thirdReboot"; SetupScript = "C:\Setup\win11\setup.ps1" } }
     )
 
     thirdReboot = @(
         @{ File = "template.ps1"; Params = @{ ScriptSet = "thirdReboot"} }
+        @{ File = "winget-configure-enable.ps1"}
+        @{ File = "winget-configure-baseline.ps1"}
+        @{ File = "winget-configure-tools.ps1"}
+        @{ File = "vscodemenu.ps1"}        
         #@{ File = "runonce.ps1"; Params = @{ NextScriptSet = "fourthReboot"; SetupScript = "C:\Setup\win11\setup.ps1" } }
     )
 
